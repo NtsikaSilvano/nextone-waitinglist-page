@@ -57,29 +57,24 @@ npm run lint
 - `src/index.css`: Tailwind import + `@theme` tokens
 - `index.html`: Space Grotesk Google Fonts import
 
-## Deploy to Netlify
+## Deploy to Vercel
 
-This repo includes `netlify.toml` for a zero-config deploy.
+### Option A: Vercel UI
 
-- **Build command**: `npm run build`
-- **Publish directory**: `dist`
-
-### Option A: Netlify UI
-
-1. Create a new site in Netlify and connect the GitHub repo.
-2. Netlify will read `netlify.toml` automatically.
+1. Create a new project in Vercel and import the GitHub repo.
+2. Set **Framework Preset** to **Vite** (Vercel usually detects this automatically).
 3. Deploy.
 
-### Option B: Netlify CLI
+### Option B: Vercel CLI
 
 ```bash
-npm i -g netlify-cli
-netlify login
-netlify init
-netlify deploy --build --prod
+npm i -g vercel
+vercel login
+vercel
+vercel --prod
 ```
 
 ## Notes
 
-- This is a **single-page** app; Netlify is configured to route all paths to `index.html`.
+- This is a **single-page** app; `vercel.json` is configured to route all paths to `index.html`.
 - There are **no environment variables** required for the waitlist form UI state (submit is local-only).
