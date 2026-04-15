@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="#FF3B30"/>
+  <text
+    x="32"
+    y="39.5"
+    text-anchor="middle"
+    font-family="Space Grotesk, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="26"
+    font-weight="700"
+    fill="#FFFFFF"
+    letter-spacing="-0.5"
+  >
+    N1
+  </text>
+</svg>
+
